@@ -1,0 +1,67 @@
+{
+  "name": "dsh-github-oss-radar",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: a standing GitHub-first open-source check on every new request. One budgeted, cached, rate-limit-aware github_search call lists reusable repositories (stars, language, license, last push, topics) before the model answers.",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "github",
+    "open-source",
+    "reuse",
+    "repository-search",
+    "system-prompt",
+    "tool"
+  ],
+  "license": "MIT",
+  "author": "Otto883",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otto883/dsh-github-oss-radar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Otto883/dsh-github-oss-radar/issues"
+  },
+  "homepage": "https://github.com/Otto883/dsh-github-oss-radar#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "node": ">=22.19.0",
+      "dshReleases": {
+        "0.1.7-rc.2": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

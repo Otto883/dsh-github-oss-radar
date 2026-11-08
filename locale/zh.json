@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "GitHub 开源雷达",
+    "description": "每次新请求先提取关键词，回答前只查一次 GitHub，列出可复用的开源项目及其星标、语言、许可证与最近推送时间。"
+  },
+  "config": {
+    "enabled": "开关：同时控制提示词策略与 github_search 工具。",
+    "maxResults": "回答中最多列出几个仓库（1-10）。",
+    "minStars": "只返回星标数不低于该值的仓库。",
+    "language": "默认的 GitHub 语言筛选，例如 TypeScript；留空表示不筛选。",
+    "includeArchived": "保留已归档的仓库。",
+    "cacheTtlMs": "一次搜索结果的缓存时长（毫秒），0 表示关闭缓存。",
+    "timeoutMs": "每次网络请求的超时时间（毫秒）。",
+    "tokenEnv": "存放 GitHub token 的环境变量名。"
+  }
+}

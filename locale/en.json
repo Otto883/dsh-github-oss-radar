@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "GitHub open-source radar",
+    "description": "Extracts keywords from every new request, searches GitHub once before answering, and lists reusable open-source projects with stars, language, license and last push."
+  },
+  "config": {
+    "enabled": "Turn the policy and the github_search tool on or off.",
+    "maxResults": "Maximum repositories the answer may list (1-10).",
+    "minStars": "Only return repositories with at least this many stars.",
+    "language": "Default GitHub language filter, for example TypeScript. Empty means no filter.",
+    "includeArchived": "Keep archived repositories in the results.",
+    "cacheTtlMs": "How long one search result stays cached, in milliseconds. 0 turns the cache off.",
+    "timeoutMs": "Per-request network timeout, in milliseconds.",
+    "tokenEnv": "Name of the environment variable that holds a GitHub token."
+  }
+}
